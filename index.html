@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="INWOOD - Exclusive Deals of Furniture Collection. Shop the latest modern, stylish, and comfortable furniture." />
+    <title>INWOOD e-Commerce Web App</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="header">
+        <div class="container header-container">
+            <button class="mobile-toggle" type="button" aria-controls="main-nav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="assets/header-icon/hamburger.svg" alt="" />
+            </button>
+
+            <a class="logo" href="#" aria-label="INWOOD home">
+                <img src="assets/Logo.svg" alt="" width="144" height="36" />
+            </a>
+
+            <nav class="nav" id="main-nav" data-visible="false" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a class="nav-link active" href="#">Home</a></li>
+                    <li><a class="nav-link" href="#products">Products</a></li>
+                    <li><a class="nav-link" href="#features">Categories</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#newsletter">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions" aria-label="Header actions">
+                <button class="icon-btn" type="button" aria-label="Search">
+                    <img src="assets/header-icon/search.svg" alt="" />
+                </button>
+                <button class="icon-btn" type="button" aria-label="Cart">
+                    <img src="assets/header-icon/cart.svg" alt="" />
+                </button>
+                <button class="icon-btn" type="button" aria-label="Account">
+                    <img src="assets/header-icon/profile.svg" alt="" />
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero -->
+        <section class="hero" aria-label="Hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Exclusive Deals of <br>Furniture Collection</h1>
+                    <p class="hero-text">Explore different categories. Find the best deals.</p>
+                    <a class="btn btn-primary" href="#products">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="features section" id="features" aria-label="Explore by category">
+            <div class="categories-section">
+                <h2 class="section-title">Explore by Category</h2>
+
+                <div class="category-layout">
+                    <aside class="category-sidebar" aria-label="Category sidebar">
+                        <div class="category-header-mobile">
+                            <form class="search-box" role="search" aria-label="Search categories">
+                                <img class="search-icon" src="assets/INWOOD/search.svg" alt="" />
+                                <input class="search-input" type="text" placeholder="Search" />
+                            </form>
+                            <button class="category-toggle" type="button" aria-label="Toggle categories">
+                                <img src="assets/header-icon/hamburger.svg" alt="" />
+                            </button>
+                        </div>
+
+                        <div class="category-left">
+                            <ul class="category-list" aria-label="Category list">
+                                <li class="active">Bedroom</li>
+                                <li>Dining Room</li>
+                                <li>Meeting Room</li>
+                                <li>Workspace</li>
+                                <li>Living Room</li>
+                                <li>Kitchen</li>
+                                <li>Living Space</li>
+                            </ul>
+
+                            <div class="category-slider" aria-label="Category slider controls">
+                                <div class="slider-line" aria-hidden="true"></div>
+
+                                <div class="slider-icons">
+                                    <button class="slider-btn" type="button" aria-label="Scroll up">
+                                        <img src="assets/INWOOD/up-arrow.svg" alt="" />
+                                    </button>
+                                    <button class="slider-btn" type="button" aria-label="Scroll down">
+                                        <img src="assets/INWOOD/down-arrow.svg" alt="" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="btn btn-secondary-filled all-categories-btn" href="#">
+                            <span>All Categories</span>
+                            <img src="assets/icons/arrow-right.svg" alt="" />
+                        </a>
+                    </aside>
+
+                    <div class="features-grid" aria-label="Category preview grid">
+                        <article class="feature-card feature-card-large">
+                            <img src="assets/images/category/bedroom.jpg" alt="" loading="lazy" decoding="async">
+                            <h3>Bedroom</h3>
+                            <a class="btn-explore" href="#">Explore</a>
+                        </article>
+
+                        <div class="feature-card" aria-hidden="true">
+                            <img src="assets/images/category/dinning.jpg" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="feature-card" aria-hidden="true">
+                            <img src="assets/images/category/kitchen.jpg" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="feature-card" aria-hidden="true">
+                            <img src="assets/images/category/living.jpg" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="feature-card" aria-hidden="true">
+                            <img src="assets/images/category/meeting.jpg" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <div class="feature-card" aria-hidden="true">
+                            <img src="assets/images/category/workspace.jpg" alt="" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Products -->
+        <section class="products section" id="products" aria-label="Popular products">
+            <div class="container products-wrap">
+                <header class="section-header center">
+                    <h2 class="section-title">Popular Products</h2>
+                </header>
+
+                <img class="products-hero" src="assets/chairs/sofa.svg" alt="" aria-hidden="true" />
+
+                <div class="products-row" id="productsRow" aria-label="Product list">
+                    <article class="product-card bg-mint">
+                        <div class="product-card-image">
+                            <img src="assets/chairs/armchair.svg" alt="Armchair" loading="lazy" />
+                        </div>
+                        <div class="product-card-info">
+                            <h3 class="product-title">Armchair</h3>
+                            <p class="product-desc">Light single chair</p>
+                            <p class="product-price">$145</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card bg-sky">
+                        <div class="product-card-image">
+                            <img src="assets/chairs/sofa.svg" alt="Premium Sofa" loading="lazy" />
+                        </div>
+                        <div class="product-card-info">
+                            <h3 class="product-title">Premium Sofa</h3>
+                            <p class="product-desc">Light single chair</p>
+                            <p class="product-price">$145</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card bg-lav">
+                        <div class="product-card-image">
+                            <img src="assets/chairs/mini-sofa.svg" alt="Minimal Sofa" loading="lazy" />
+                        </div>
+                        <div class="product-card-info">
+                            <h3 class="product-title">Minimal Sofa</h3>
+                            <p class="product-desc">Light single chair</p>
+                            <p class="product-price">$145</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card bg-cream">
+                        <div class="product-card-image">
+                            <img src="assets/chairs/d-chair.svg" alt="Dining Chair" loading="lazy" />
+                        </div>
+                        <div class="product-card-info">
+                            <h3 class="product-title">Dining Chair</h3>
+                            <p class="product-desc">Light single chair</p>
+                            <p class="product-price">$145</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="products-controls" aria-label="Product slider controls">
+                    <div class="products-slider" id="productsSlider">
+                        <div class="products-slider-track" aria-hidden="true"></div>
+                        <input class="products-range" id="productsRange" type="range" min="0" max="100" value="0"
+                            aria-label="Scroll products" />
+                    </div>
+
+                    <div class="products-arrows" aria-label="Slider arrows">
+                        <button class="products-arrow" id="productsPrev" type="button" aria-label="Previous">
+                            <img src="assets/INWOOD/light-left-arrow.svg" alt="">
+                        </button>
+                        <button class="products-arrow" id="productsNext" type="button" aria-label="Next">
+                            <img src="assets/INWOOD/light-right-arrow.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products-cta">
+                    <a class="btn btn-secondary-filled" href="#">
+                        <span>Explore all items</span>
+                        <img src="assets/INWOOD/left-arr.svg" alt="" width="16" height="16" />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Package -->
+        <section class="special-package section" aria-label="Special package">
+            <div class="container center">
+                <h2 class="section-title sp-heading">Special Package</h2>
+
+                <div class="special-package-content">
+                    <div class="sp-left">
+                        <div class="special-package-image">
+                            <img class="sp-img-main" src="assets/images/specialPackage/sp1.jpg"
+                                alt="Larkin Wood Full Set" loading="lazy" decoding="async" />
+                            <button class="sp-float-btn" type="button" aria-label="Expand">
+                                <span class="sp-float-icon" aria-hidden="true"></span>
+                            </button>
+                        </div>
+
+                        <div class="sp-main-meta">
+                            <div class="sp-main-info">
+                                <h3 class="sp-title">Larkin Wood Full Set</h3>
+
+                                <div class="rating" aria-label="Rating">
+                                    <div class="stars">
+                                        ★★★★★
+                                    </div>
+                                </div>
+
+                                <p class="sp-price">$729.99</p>
+                            </div>
+
+                            <button class="sp-add-cart" type="button" aria-label="Add to cart">
+                                <span>Add to cart</span>
+                                <img src="assets/INWOOD/package-cart.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="sp-right">
+                        <div class="sp-desc">
+                            <span class="sp-desc-title">Description</span>
+                            <p>
+                                Cast Aluminum Outdoor Chaise Lounge As an elegant and classic touch to your outdoor
+                                space, this cast Aluminum Chaise Lounge combines the appearance, function and quality
+                                all together, offering you with the best experience.
+                            </p>
+                            <a class="btn-more" href="#">
+                                <span>See More</span>
+                                <span class="sp-caret" aria-hidden="true"></span>
+                            </a>
+                        </div>
+
+                        <div class="sp-sub-items" aria-label="Package items">
+                            <article class="sp-item">
+                                <div class="sp-thumb is-active" aria-hidden="true">
+                                    <img src="assets/images/specialPackage/sp1.jpg" alt="" loading="lazy"
+                                        decoding="async">
+                                </div>
+
+                                <div class="sp-item-info is-active">
+                                    <div class="sp-row-top">
+                                        <h5>Living Room Family Set</h5>
+                                        <span class="sp-item-price">$229.99</span>
+                                    </div>
+
+                                    <div class="rating-mini" aria-label="Rating">
+                                        <div class="stars">
+                                            ★★★★★
+                                        </div>
+                                    </div>
+
+                                    <a class="sp-link" href="#">See Details</a>
+                                    <button class="sp-mini-search" type="button" aria-label="Search">
+                                        <img src="assets/icons/search.svg" alt="" />
+                                    </button>
+                                </div>
+                                <div class="sp-thumb-right is-active" aria-hidden="true">
+                                    <img src="assets/images/specialPackage/sp2.jpg" alt="" loading="lazy"
+                                        decoding="async">
+                                </div>
+                            </article>
+
+                            <div class="product-block">
+                                <div class="product-block-left">
+                                    <article class="sp-item">
+                                        <div class="sp-thumb" aria-hidden="true">
+                                            <img src="assets/images/specialPackage/sp2.jpg" alt="" loading="lazy"
+                                                decoding="async">
+
+                                        </div>
+
+                                        <div class="sp-item-info">
+                                            <div class="sp-row-top">
+                                                <h5>Living Room Special Set</h5>
+                                                <span class="sp-item-price">$329.99</span>
+                                            </div>
+
+                                            <div class="rating-mini" aria-label="Rating">
+                                                <div class="stars">
+                                                    ★★★★★
+                                                </div>
+                                            </div>
+
+                                            <p class="sp-mini-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit.
+                                            </p>
+
+                                            <a class="btn-more mini" href="#">
+                                                <span>See More</span>
+                                                <span class="sp-caret" aria-hidden="true"></span>
+                                            </a>
+                                        </div>
+                                    </article>
+
+                                    <article class="sp-item">
+                                        <div class="sp-thumb" aria-hidden="true">
+                                            <img src="assets/images/specialPackage/sp3.jpg" alt="" loading="lazy"
+                                                decoding="async">
+                                        </div>
+
+                                        <div class="sp-item-info">
+                                            <div class="sp-row-top">
+                                                <h5>Living Room Special Set</h5>
+                                                <span class="sp-item-price">$587.99</span>
+                                            </div>
+
+                                            <div class="rating-mini" aria-label="Rating">
+                                                <div class="stars">
+                                                    ★★★★★
+                                                </div>
+                                            </div>
+
+                                            <p class="sp-mini-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit.
+                                            </p>
+
+                                            <a class="btn-more mini" href="#">
+                                                <span>See More</span>
+                                                <span class="sp-caret" aria-hidden="true"></span>
+                                            </a>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="package-slider" aria-label="Package slider controls">
+                                    <div class="slider-line" aria-hidden="true"></div>
+
+                                    <div class="slider-icons">
+                                        <button class="slider-btn" type="button" aria-label="Scroll up">
+                                            <img src="assets/INWOOD/up-arrow.svg" alt="" />
+                                        </button>
+                                        <button class="slider-btn" type="button" aria-label="Scroll down">
+                                            <img src="assets/INWOOD/down-arrow.svg" alt="" />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Own Creation -->
+        <section class="own-creation" aria-label="Our own creation">
+
+            <div class="own-creation-wrap">
+                <div class="creation-feature">
+                    <div class="creation-title">Our<br />Own Creation</div>
+                    <p>Designed in our studio</p>
+
+                    <div class="creation-nav">
+                        <span>More</span>
+                        <div class="slide-line" aria-hidden="true"></div>
+                        <div class="nav-icons" aria-label="Creation navigation">
+                            <button class="nav-btn prev" type="button" aria-label="Previous">
+                                <img src="assets/INWOOD/cleft-arrow.svg" alt="">
+                            </button>
+                            <button class="nav-btn next" type="button" aria-label="Next">
+                                <img src="assets/INWOOD/cright-arrow.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="creation-slider" aria-label="Creation slider">
+                    <div class="creation-card is-active">
+                        <img src="assets/images/ourcreation/creation1.jpg" alt="" loading="lazy" decoding="async">
+                        <div class="creation-card-inner">
+                            <button class="creation-btn" type="button">Explore All Rooms</button>
+                        </div>
+                    </div>
+                    <div class="creation-card" aria-hidden="true">
+                        <img src="assets/images/ourcreation/creation2.jpg" alt="" loading="lazy" decoding="async">
+
+                    </div>
+                    <div class="creation-card" aria-hidden="true">
+                        <img src="assets/images/ourcreation/creation3.jpg" alt="" loading="lazy" decoding="async">
+
+                    </div>
+                    <div class="creation-card" aria-hidden="true">
+                        <img src="assets/images/ourcreation/creation4.jpg" alt="" loading="lazy" decoding="async">
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Benefits -->
+        <section class="benefits" aria-label="Benefits">
+            <div class="container">
+                <header class="section-header center">
+                    <h2 class="section-title">Benefits for your expediency</h2>
+                </header>
+
+                <div class="benefits-grid mt-4">
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <img src="assets/INWOOD/payment-method.svg" alt="" loading="lazy" decoding="async" />
+                        </div>
+                        <h3 class="mt-2">Payment Method</h3>
+                        <p class="mt-2">We offer flexible payment options to make it easier.</p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <img src="assets/INWOOD/return-policy.svg" alt="" loading="lazy" decoding="async" />
+                        </div>
+                        <h3 class="mt-2">Return policy</h3>
+                        <p class="mt-2">You can return a product within 30 days.</p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <img src="assets/INWOOD/customer-support.svg" alt="" loading="lazy" decoding="async" />
+                        </div>
+                        <h3 class="mt-2">Customer Support</h3>
+                        <p class="mt-2">Our customer support is 24/7.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials" id="about" aria-label="Testimonials">
+            <div class="container">
+                <header class="section-header center">
+                    <h2 class="section-title">Testimonials</h2>
+                    <p class="testimonials-subtitle">Over 15,000 happy customers.</p>
+                </header>
+
+                <div class="testimonial-single">
+                    <span class="quote-icon" aria-hidden="true">“</span>
+
+                    <div class="testimonial-image" aria-hidden="true">
+                        <img src="assets/images/testimonial/testimonials.jpg" alt="" loading="lazy" decoding="async">
+                    </div>
+
+                    <div class="testimonial-content">
+                        <p class="testimonial-long-text">
+                            “My experience with Mark is a complete success, from customer service, wide range of
+                            products,
+                            clean store, purchasing experience, the newsletter. Thank you.”
+                        </p>
+                        <p class="author-name">Kulzum Mujtaba</p>
+                        <p class="author-role">CEO of Floatcom</p>
+                    </div>
+                </div>
+                <div class="products-controls" aria-label="Product slider controls">
+                    <div class="products-slider mt-4" id="productsSlider">
+                        <div class="products-slider-track" aria-hidden="true"></div>
+                        <input class="products-range" id="productsRange" type="range" min="0" max="100" value="0"
+                            aria-label="Scroll products" />
+                    </div>
+
+                    <div class="products-arrows" aria-label="Slider arrows">
+                        <div class="btn-see-all">See all review</div>
+                        <button class="products-arrow" type="button" aria-label="Next">
+                            <img src="assets/INWOOD/right-arrow.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter section" id="newsletter" aria-label="Newsletter">
+            <div class="newsletter-container-split">
+                <div class="newsletter-col-left" aria-hidden="true">
+                    <img src="assets/images/newsletter/news.jpg" alt="" loading="lazy" decoding="async">
+                </div>
+
+                <div class="newsletter-col-right">
+                    <h2 class="section-title">
+                        Join Our <span class="newslatter-span">Newsletter</span>
+                    </h2>
+
+                    <p class="newsletter-text-dark">Receive exclusive deals, discounts and many offers.</p>
+
+                    <form class="newsletter-form-simple" id="newsletterForm" novalidate>
+                        <input class="input-bottom-border" id="email" type="email" placeholder="Enter your email"
+                            required />
+                        <button class="btn btn-primary btn-dark" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" aria-label="Footer">
+        <div class="container footer-container">
+            <div class="footer-brand-col">
+                <a class="logo logo-light" href="#" aria-label="INWOOD home">
+                    <img src="assets/Logo.svg" alt="" width="144" height="36" loading="lazy" decoding="async" />
+                </a>
+
+                <div class="social-links" aria-label="Social links">
+                    <a href="#" aria-label="Facebook"><img src="assets/INWOOD/facebook.svg" alt="" loading="lazy"
+                            decoding="async" /></a>
+                    <a href="#" aria-label="Instagram"><img src="assets/INWOOD/instagram.svg" alt="" loading="lazy"
+                            decoding="async" /></a>
+                    <a href="#" aria-label="Twitter"><img src="assets/INWOOD//linkedIn.svg" alt="" loading="lazy"
+                            decoding="async" /></a>
+                    <a href="#" aria-label="Instagram"><img src="assets/INWOOD/dribble.svg" alt="" loading="lazy"
+                            decoding="async" /></a>
+                    <a href="#" aria-label="Twitter"><img src="assets/INWOOD/twitter.svg" alt="" loading="lazy"
+                            decoding="async" /></a>
+                </div>
+
+                <address class="address-block">
+                    <p>Address</p>
+                    <p>+123 456 789</p>
+                    <p>SharkSolutions</p>
+                    <p>Pakistan</p>
+                </address>
+            </div>
+
+            <div class="footer-down-row">
+                <nav class="footer-links-col" aria-label="My account">
+                    <h4>My Account</h4>
+                    <ul>
+                        <li><a href="#">Sign in</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Order status</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-links-col" aria-label="Help">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Sizing</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-links-col" aria-label="Shop">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">All Products</a></li>
+                        <li><a href="#">Bedroom</a></li>
+                        <li><a href="#">Dining Room</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-links-col" aria-label="Legal stuff">
+                    <h4>Legal Stuff</h4>
+                    <ul>
+                        <li><a href="#">Shipping &amp; Delivery</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Privacy &amp; Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2025 INWOOD. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
